@@ -18,7 +18,7 @@ const Question: React.FC<QuestionProps> = ({ question, onAnswer, questionNumber,
       <p className="font-semibold">
         Question {questionNumber} / {totalQuestions}
       </p>
-      <p className="text-gray-700">{question.text}</p>
+      <p>{question.text}</p>
       <div className="grid grid-cols-1 gap-4">
         {question.answers.map((answer, index) => {
           let icons = [];
