@@ -422,8 +422,10 @@ function App() {
                 </button>
               </div>
               <div className="divide-y divide-gray-200">
-                {result ? (
-                  <Result resultText={result} onReset={resetQuiz} />
+                {result  ? (
+                  // changer la couleur du texte de ce composant en blanc lorsque je clique sur du darkmode
+                  <div ><Result resultText={result} onReset={resetQuiz} /></div>
+                  
                 ) : (
                   <>
                     <Question
